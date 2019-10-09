@@ -30,7 +30,7 @@ public class PacienteServiceImpl implements IPacienteService {
 	@Override
 	public List<Paciente> listar() {
 		// TODO Auto-generated method stub
-		return null;
+		return repo.findAll();
 	}
 
 	@Override
