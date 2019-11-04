@@ -2,6 +2,7 @@ package com.mely.service.impl;
 
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,6 +13,7 @@ import com.mely.service.IPacienteService;
 
 @Service
 public class PacienteServiceImpl implements IPacienteService {
+	
 	@Autowired
 	private IPacienteRepo repo;
 
@@ -35,8 +37,8 @@ public class PacienteServiceImpl implements IPacienteService {
 
 	@Override
 	public Paciente leerPorId(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+		Optional<Paciente> paciente = repo.findById(id);
+		return paciente.get();
 	}
 
 	@Override
