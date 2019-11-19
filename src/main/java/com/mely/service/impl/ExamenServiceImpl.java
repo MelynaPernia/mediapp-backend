@@ -1,12 +1,13 @@
 package com.mely.service.impl;
 
+
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.mely.model.Especialidad;
+
 import com.mely.model.Examen;
 import com.mely.repo.IExamenRepo;
 import com.mely.service.IExamenService;

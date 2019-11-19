@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.mely.model.Examen;
-import com.mely.model.Paciente;
 import com.mely.service.IExamenService;
 
 @RestController
